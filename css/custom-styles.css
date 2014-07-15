@@ -1,0 +1,113 @@
+body {
+	background-image: url(../images/bg1.jpg);
+	background-repeat: repeat;
+	border-top-width: 9px;
+	border-top-style: solid;
+	border-top-color: #063b63;
+}.home-page {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.logo {
+	padding-bottom: 20px;
+}
+.home-page h1 {
+	font-size: 30px;
+	font-weight: normal;
+	color: #363636;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+.home-page h3 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #525252;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+.home-page .form-control {
+	height: 45px;
+	font-size: 17px;
+}
+.btn-get {
+	color: #fff;
+	background-color: #ff8003;
+	border-color: #ff8003;
+	height: 45px;
+	font-size: 18px;
+	font-weight: bold;
+}.footer {
+	background-color: #d2d2d2;
+	border: 1px solid #d2d2d2;
+	border-radius: 25px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.footer .copyright{
+	padding-top:10px;
+}
+.follow {
+	padding: 0px;
+	text-align: right;
+}
+
+.follow a.facebook {
+	background-image: url(../images/facebook-icon.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	background-position: center center;
+}
+.follow a.twitter {
+	background-image: url(../images/twiiter-icon.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	background-position: center center;
+}
+.follow a.googleplus {
+	background-image: url(../images/googleplus-icon.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	background-position: center center;
+}
+.follow a.pinterest {
+	background-image: url(../images/pinterest.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	background-position: center center;
+}
+@media (max-width: 767px) {
+	.footer .copyright{
+	text-align: center;
+	padding-bottom: 15px;
+}.follow {
+	padding: 0px;
+	text-align: center;
+}
+.btn-get {
+	color: #fff;
+	background-color: #ff8003;
+	border-color: #ff8003;
+	height: 45px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+}
