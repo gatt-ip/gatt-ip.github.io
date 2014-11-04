@@ -1,127 +1,473 @@
 body {
-	background-image: url(../images/bg1.jpg);
-	background-repeat: repeat;
-	border-top-width: 9px;
+	border-top-width: 5px;
 	border-top-style: solid;
 	border-top-color: #063b63;
-}.home-page {
-	padding-top: 30px;
-	padding-bottom: 30px;
+}
+@font-face {
+	font-family: 'HelveticaNeue';
+	src:url(../fonts/Helvetica.ttf);
+}
+@font-face {
+	font-family: 'HelveticaNeue47';
+	src:url(../fonts/HelveticaNeueLTStd-LtCn.otf)
+}
+@font-face {
+	font-family: 'HelveticaNeue57';
+	src:url(../fonts/HelveticaNeueLTStd-Cn.otf)
+}
+@font-face {
+	font-family: 'HelveticaNeue67';
+	src:url(../fonts/HelveticaNeueLTStd-MdCn.otf)
+}
+.header {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #ceecff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ceecff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#ceecff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#ceecff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#ceecff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#ceecff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#ceecff',GradientType=0 ); /* IE6-9 */
+	padding-top: 10px;
 }
 .logo {
-	padding-bottom: 20px;
+	background-image: url(../images/logo-gattip.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: 65px;
+	width: 271px;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
-.home-page h1 {
+.banner{
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	max-width: 100%;
+	background-size: 100% auto;
+	height: 376px;
+	width: 405px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.quote {
+	font-family: 'HelveticaNeue57';
 	font-size: 30px;
 	font-weight: normal;
-	color: #363636;
+	color: #063b63;
 	text-decoration: none;
-	padding-top: 0px;
+	padding-top: 20px;
 	padding-right: 0px;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 	padding-left: 0px;
+	width:78%;
+	line-height:42px;
 }
-.home-page h3 {
-	font-size: 18px;
+.header .downloads {
+	width: 270px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.header .downloads .github {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.header .downloads .github .g-icon{
+	background-image: url(../images/github-d.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 57px;
+	width: 170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.header .downloads .img-responsive {
+display: inline;
+}
+.header .downloads .googleplay {
+	text-align: center;
+	margin-bottom: 10px;
+	background-image: url(../images/googleplay-d.png);
+	background-repeat: no-repeat;
+	height: 44px;
+	width: 129px;
+}
+.header .downloads .applestore {
+	text-align: center;
+	margin-bottom: 10px;
+	background-image: url(../images/appstore-d.png);
+	background-repeat: no-repeat;
+	height: 44px;
+	width: 129px;
+}
+.notified-bar {
+	padding: 0px;
+	margin: 0px;
+	background-color: #2c9fd5;
+	background-image: url(../images/notified-bar.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.notified-bar .quoteip {
+	font-family: 'HelveticaNeue47';
+	font-size: 42px;
 	font-weight: normal;
-	color: #525252;
+	color: #FFF;
 	text-decoration: none;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 20px;
-	padding-left: 0px;
+	padding-top: 13px;
+padding-bottom: 13px;
+height: 83px;
 }
-.home-page .form-control {
-	height: 45px;
-	font-size: 17px;
+.notified-bar .subscribe {
+	background-color: #185876;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	height: 83px;
 }
-.btn-get {
+.notified-bar .subscribe .text{
+	font-family: 'HelveticaNeue';
+	font-size: 16px;
+	font-weight: normal;
+	color: #FFF;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+.subscribe .btn-get {
 	color: #fff;
 	background-color: #ff8003;
 	border-color: #ff8003;
-	height: 45px;
+	height: 38px;
 	font-size: 18px;
 	font-weight: bold;
-}.footer {
-	background-color: #d2d2d2;
-	border: 1px solid #d2d2d2;
-	border-radius: 25px;
+}
+.subscribe .form-control {
+	height: 38px;
+	font-size: 17px;
+}
+.whatis {
 	padding-top: 10px;
-	padding-right: 20px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+.whatis .what-img {
+	background-image: url(../images/what-gattip.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	max-width: 100%;
+	background-size: 100% auto;
+	height: 130px;
+	width: 496px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
+.img{
+	text-align:center;
+	padding-bottom:15px;
+}
+.img .img-responsive {
+display: inline;
+}
+.whatis h2{
+	font-family: 'HelveticaNeue67';
+	font-size: 35px;
+	font-weight: normal;
+	color: #fb6c4c;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+.whatis p {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.diagram {
+	margin: 0px;
+	background-image: url(../images/bg-blue.jpg);
+	background-repeat: repeat;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+.diagram .di-img {
+	background-image: url(../images/diagram.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 150px;
+	width: 870px;
+	max-width: 100%;
+	background-size: 100% auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+.cloud {
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 0px;
 	padding-bottom: 10px;
-	padding-left: 20px;
+	padding-left: 0px;
+}
+.cloud h2{
+	font-family: 'HelveticaNeue67';
+	font-size: 35px;
+	font-weight: normal;
+	color: #2c9fd5;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+.cloud .gateway-c {
+	background-image: url(../images/gateway-c.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 207px;
+	width: 114px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+.cloud .cloud-c {
+	background-image: url(../images/cloud-c.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 151px;
+	width: 185px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+.cloud .browser-c {
+	background-image: url(../images/browser-c.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 207px;
+	width: 128px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+.footer {
+	margin: 0px;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #d6d6d6;
 }
 .footer .copyright{
-	padding-top:10px;
+	font-family: 'HelveticaNeue47';
+	font-size: 18px;
+	font-weight: normal;
+	color: #313131;
+	text-decoration: none;
+	text-align: center;
 }
-.follow {
-	padding: 0px;
-	text-align: right;
+.footer .social{
+	text-align:center;
+	padding-bottom: 10px;
+}
+#mc_embed_signup form {
+padding: 0px !important;
+}
+#mc_embed_signup input.email {
+	width: 100% !important;
+margin: 0px !important;
+}
+.gatt-social {
+margin-bottom: 20px;
+text-align: center;
+}
+.gatt-social-buttons {
+display: inline-block;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+}
+.gatt-social-buttons li {
+display: inline-block;
+padding: 5px 8px;
+line-height: 1;
 }
 
-.follow a.facebook {
-	background-image: url(../images/facebook-icon.png);
+@media (max-width: 768px)  {
+	.logo {
+	padding-bottom: 0px;
+}
+	.quote {
+	font-family: 'HelveticaNeue57';
+	font-size: 22px;
+	font-weight: normal;
+	color: #063b63;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	width: 100%;
+	line-height:30px;
+}
+.notified-bar {
+	background-color: #2c9fd5;
+	background-image: none;
 	background-repeat: no-repeat;
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	background-position: center center;
+	background-position: center top;
 }
-.follow a.twitter {
-	background-image: url(../images/twiiter-icon.png);
-	background-repeat: no-repeat;
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	background-position: center center;
+.notified-bar .quoteip {
+height: auto;
 }
-.follow a.googleplus {
-	background-image: url(../images/googleplus-icon.png);
-	background-repeat: no-repeat;
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	background-position: center center;
+.notified-bar .subscribe {
+height: auto;
 }
-.follow a.pinterest {
-	background-image: url(../images/pinterest.png);
-	background-repeat: no-repeat;
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	background-position: center center;
-}
-@media (max-width: 767px) {
-	.footer .copyright{
-	text-align: center;
-	padding-bottom: 15px;
-}.follow {
-	padding: 0px;
-	text-align: center;
-}
-.btn-get {
+.subscribe .btn-get {
 	color: #fff;
 	background-color: #ff8003;
 	border-color: #ff8003;
-	height: 45px;
+	height: 40px;
 	font-size: 18px;
 	font-weight: bold;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	width: 100%;
 }
+.notified-bar .subscribe {
+	background-color: #185876;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	padding-left: 25px;
 }
-#mc_embed_signup form {
-display: block;
-position: relative;
-text-align: left;
-padding:0px !important;
+.notified-bar .quoteip {
+	background-color: #2c9fd5;
+	font-family: 'HelveticaNeue47';
+	font-size: 30px;
+	font-weight: normal;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	padding-right: 0px;
+	padding-top: 10px;
+padding-bottom: 10px;
+text-align:center;
 }
-#mc_embed_signup input.email {
-display: block;
-padding: 8px 0;
-margin: 0 4% 10px 0;
-text-indent: 5px;
-width: 100% !important;
-min-width: 100% !important;
+.whatis p {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.whatis h2{
+	font-family: 'HelveticaNeue67';
+	font-size: 25px;
+	font-weight: normal;
+	color: #fb6c4c;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}.cloud h2{
+	font-family: 'HelveticaNeue67';
+	font-size: 25px;
+	font-weight: normal;
+	color: #2c9fd5;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 25px;
+	padding-left: 0px;
+}
+.diagram {
+	margin: 0px;
+	background-image: url(../images/bg-blue.jpg);
+	background-repeat: repeat;
+	padding-top: 30px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 2000px) { 
+		.header .downloads {
+	width: 300px;
+margin-right: inherit;
+margin-left: inherit;
+}
+}
+@media (min-width: 1200px) {
+.container {
+width: 990px;
+}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.logo {
+	background-image: url(../images/logo-gattip@2x.png);
+	background-size: 100% auto;
+}
+
+.banner{
+	background-image: url(../images/banner@2x.png);
+	background-size: 100% auto;
+
+}
+.whatis .what-img {
+	background-image: url(../images/what-gattip@2x.png);
+	background-size: 100% auto;
+}
+.diagram .di-img {
+	background-image: url(../images/diagram@2x.png);
+	background-size: 100% auto;
+}
+.cloud .gateway-c {
+	background-image: url(../images/gateway-c@2x.png);
+	background-size: 114px 207px;
+}
+.cloud .cloud-c {
+	background-image: url(../images/cloud-c@2x.png);
+	background-size: 185px 151px;
+}
+.cloud .browser-c {
+	background-image: url(../images/browser-c@2x.png);
+	background-size: 128px 207px;
+}
+.header .downloads .github .g-icon{
+	background-image: url(../images/github-d@2x.png);
+	background-size: 170px 57px;
+}
+.header .downloads .googleplay {
+	background-image: url(../images/googleplay-d@2x.png);
+	background-size: 129px 44px;
+}
+.header .downloads .applestore {
+	background-image: url(../images/appstore-d@2x.png);
+	background-size: 129px 44px;
+}
 }
