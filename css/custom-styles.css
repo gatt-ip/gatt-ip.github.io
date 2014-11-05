@@ -312,7 +312,7 @@ padding: 5px 8px;
 line-height: 1;
 }
 
-@media (max-width: 768px)  {
+@media (min-width: 768px)  {
 	.logo {
 	padding-bottom: 0px;
 }
@@ -329,49 +329,7 @@ line-height: 1;
 	width: 100%;
 	line-height:30px;
 }
-.notified-bar {
-	background-color: #2c9fd5;
-	background-image: none;
-	background-repeat: no-repeat;
-	background-position: center top;
-}
-.notified-bar .quoteip {
-height: auto;
-}
-.notified-bar .subscribe {
-height: auto;
-}
-.subscribe .btn-get {
-	color: #fff;
-	background-color: #ff8003;
-	border-color: #ff8003;
-	height: 40px;
-	font-size: 18px;
-	font-weight: bold;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	width: 100%;
-}
-.notified-bar .subscribe {
-	background-color: #185876;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 25px;
-	padding-left: 25px;
-}
-.notified-bar .quoteip {
-	background-color: #2c9fd5;
-	font-family: 'HelveticaNeue47';
-	font-size: 30px;
-	font-weight: normal;
-	color: #FFF;
-	text-decoration: none;
-	text-align: center;
-	padding-right: 0px;
-	padding-top: 10px;
-padding-bottom: 10px;
-text-align:center;
-}
+
 .whatis p {
 	font-size: 18px;
 	font-style: italic;
@@ -417,8 +375,54 @@ text-align:center;
 	padding-left: 0px;
 }
 }
+@media (max-width: 991px)  {
+.notified-bar {
+	background-color: #2c9fd5;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.notified-bar .quoteip {
+height: auto;
+}
+.notified-bar .subscribe {
+height: auto;
+}
+.subscribe .btn-get {
+	color: #fff;
+	background-color: #ff8003;
+	border-color: #ff8003;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+.notified-bar .subscribe {
+	background-color: #185876;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+.notified-bar .quoteip {
+	background-color: #2c9fd5;
+	font-family: 'HelveticaNeue47';
+	font-size: 30px;
+	font-weight: normal;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	padding-right: 0px;
+	padding-top: 10px;
+padding-bottom: 10px;
+text-align:center;
+}
+}
 
-@media (min-width: 769px) and (max-width: 2000px) { 
+
+@media (min-width: 992px) and (max-width: 2000px) { 
 		.header .downloads {
 	width: 300px;
 margin-right: inherit;
@@ -474,3 +478,4 @@ width: 990px;
 	background-size: 129px 44px;
 }
 }
+
